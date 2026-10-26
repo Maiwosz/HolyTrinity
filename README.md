@@ -7,7 +7,7 @@ Repozytorium z ćwiczeniami laboratoryjnymi.
 
 ## Podsumowanie punktów
 
-**Zebrane: 2.5 / 33.0**
+**Zebrane: 4.0 / 12.0**
 
 ## Lista ćwiczeń
 
@@ -37,3 +37,4 @@ Repozytorium z ćwiczeniami laboratoryjnymi.
 - [ ] Kubernetes, Helm, K3D, Microservices (2.0, instrukcja nieweryfikowana)
 - [ ] Kubernetes, Microservices (2.0, instrukcja nieweryfikowana)
 - [ ] mini-GPT from scratch, Transformer, NumPy, Matplotlib, PyTorch (1.0, instrukcja nieweryfikowana)
+- [x] Podstawy sterowania bezzałogowym statkiem powietrznym (1.5)
