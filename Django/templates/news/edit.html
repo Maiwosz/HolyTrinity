@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/news/{{ news.id }}/edit/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="SAVE">
+</form>
+<a href="/news/{{ news.id }}/">Cancel</a>
+{% endblock %}

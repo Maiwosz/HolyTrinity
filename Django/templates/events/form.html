@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if event %}
+<form action="{% url 'events:edit' event.id %}" method="post">
+{% else %}
+<form action="{% url 'events:add' %}" method="post">
+{% endif %}
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="{% if event %}SAVE{% else %}ADD{% endif %}">
+</form>
+<a href="{% url 'events:index' %}">Cancel</a>
+{% endblock %}
