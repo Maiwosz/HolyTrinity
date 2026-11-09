@@ -4,14 +4,15 @@ Repozytorium z ćwiczeniami laboratoryjnymi.
 
 - [`Django/`](Django) – ćwiczenie Django
 - [`PyQt/`](PyQt) – ćwiczenie PyQt
+- [`Turtle/`](Turtle) – ćwiczenie Turtle
 
 ## Podsumowanie punktów
 
-**Zebrane: 4.0 / 12.0**
+**Zebrane: 4.5 / 12.0**
 
 ## Lista ćwiczeń
 
-- [ ] Turtle (0.5)
+- [x] Turtle (0.5) – [`Turtle/`](Turtle)
 - [x] PyQt lub PySide (1.0) – [`PyQt/`](PyQt)
 - [ ] Keras (1.0)
 - [ ] Keras, Jupyter, Orange, Sieci przetrenowane (1.5)
