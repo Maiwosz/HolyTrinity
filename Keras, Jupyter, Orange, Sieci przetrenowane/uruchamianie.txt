@@ -1,0 +1,3 @@
+.venv\Scripts\python.exe -m jupyter notebook
+(otworzyć plik "Keras, Jupyter, Orange, Sieci przetrenowan - Zadanie do wykonania.ipynb")
+orange-canvas orange.ows

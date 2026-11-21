@@ -1,0 +1,5 @@
+python zad1.py
+python zad2.py
+python zad3.py
+python zad4a.py
+python zad4b.py

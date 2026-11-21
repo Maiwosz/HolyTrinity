@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Użytkownicy{% endblock %}
+{% block content %}
+<h1>Użytkownicy</h1>
+<p><a href="/">Strona główna</a></p>
+
+<table border="1" cellpadding="4">
+    <tr><th>ID</th><th>Nazwa</th><th>Administrator</th></tr>
+    {% for u in users %}
+    <tr>
+        <td><a href="/user/{{ u['id'] }}">{{ u["id"] }}</a></td>
+        <td><a href="/user/{{ u['name'] }}">{{ u["name"] }}</a></td>
+        <td>{{ "tak" if u["is_admin"] else "nie" }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2>Dodaj użytkownika</h2>
+{% if error %}<p style="color: red">{{ error }}</p>{% endif %}
+<form method="POST" action="/users">
+    <p>Nazwa: <input type="text" name="name"></p>
+    <p>Hasło: <input type="password" name="password"></p>
+    <p><input type="checkbox" name="is_admin"> Administrator</p>
+    <input type="submit" value="Dodaj">
+</form>
+{% endblock %}

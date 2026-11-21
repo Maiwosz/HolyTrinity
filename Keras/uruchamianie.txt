@@ -1,0 +1,2 @@
+.venv\Scripts\python.exe keras_digits.py - trenowanie
+.venv\Scripts\python.exe Keras_PyQt_Paint.py - rysowanie

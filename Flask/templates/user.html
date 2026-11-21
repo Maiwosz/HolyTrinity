@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Użytkownik{% endblock %}
+{% block content %}
+<h1>Użytkownik {{ user["name"] }}</h1>
+<p><a href="/users">Lista użytkowników</a></p>
+<ul>
+    <li>ID: {{ user["id"] }}</li>
+    <li>Nazwa: {{ user["name"] }}</li>
+    <li>Administrator: {{ "tak" if user["is_admin"] else "nie" }}</li>
+</ul>
+{% endblock %}

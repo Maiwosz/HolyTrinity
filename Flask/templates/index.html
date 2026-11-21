@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Książki{% endblock %}
+{% block content %}
+<h1>Książki</h1>
+<p>
+    Zalogowano jako: <b>{{ session["user"] }}</b> |
+    {% if session["is_admin"] %}<a href="/users">Użytkownicy</a> |{% endif %}
+    <a href="/logout">Wyloguj</a>
+</p>
+
+<ul>
+    {% for book in books %}
+    <li>{{ book["title"] }} – {{ book["author"] }}</li>
+    {% else %}
+    <li>Brak książek</li>
+    {% endfor %}
+</ul>
+
+<h2>Dodaj książkę</h2>
+<form method="POST" action="/books">
+    <p>Tytuł: <input type="text" name="title"></p>
+    <p>Autor: <input type="text" name="author"></p>
+    <input type="submit" value="Dodaj">
+</form>
+{% endblock %}
